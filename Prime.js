@@ -1,4 +1,7 @@
 function checkPrime(num){
+
+  
+
     let factor=0;
     for(let i=2;i*i<=num;i++){
         if(num%i===0){
@@ -15,6 +18,7 @@ function checkPrime(num){
 
 let answer=checkPrime(13);
 if(answer==true){
+
     console.log("Prime");
 }
 else{
