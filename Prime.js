@@ -1,7 +1,15 @@
 function checkPrime(num){
-    let bag='';
-    for(let i=0;i<num;i++){
-        bag += num(i);
+    let count=0;
+    for(let i=1;i<=num;i++){
+        if(num%i===0){
+            count++;
+        }
     }
-    console.log(bag);
+    if(count===2){
+        return true;
+    }
+    return false;
+
+    
 }
+checkPrime(13);
